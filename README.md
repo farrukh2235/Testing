@@ -14,7 +14,7 @@ This is a simple RESTful service that accepts a Dockerfile, builds a Docker imag
    git clone https://github.com/yourusername/docker-builder-service.git
 
 ## Running
-- pip install -r req.txt
+- pip install --upgrade -r req.txt
 - python app.py
 - curl -X POST http://localhost:5000/build_file \
   -F "dockerfile=@Dockerfile" \
