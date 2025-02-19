@@ -33,7 +33,7 @@ This is a simple RESTful service that accepts a Dockerfile, builds a Docker imag
    ```bash
    curl -X POST http://localhost:5000/build_file \
         -F "dockerfile=@Dockerfile" \
-        -F "image_tag=docker.io/farrukhvirk/myimage:latest"
+        -F "image_tag=docker.io/farrukhvirk/aicore-berlin:latest"
    ```
 
 ### Notes
