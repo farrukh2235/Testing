@@ -35,6 +35,15 @@ This is a simple RESTful service that accepts a Dockerfile, builds a Docker imag
         -F "dockerfile=@Dockerfile" \
         -F "image_tag=docker.io/farrukhvirk/aicore-berlin:latest"
    ```
+   or if you want to paste the docker in the payload you can use
+   ```bash
+   curl -X POST http://localhost:5000/build \
+     -H "Content-Type: application/json" \
+     -d '{
+          "dockerfile": "FROM python:3.8\nCMD echo Hello, World!",
+          "image_tag": "farrukhvirk/aicore-berlin:1-23"
+         }'
+   ```
 
 ### Notes
 - Ensure the `Dockerfile` is in the correct directory before running the `curl` command.
